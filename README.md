@@ -13,9 +13,9 @@ As I already have a bachelor's degree in liberal arts and sciences from the Univ
 at Urbana-Champaign, OSSU suits my situation perfectly.
 
 OSSU is nontraditional in that it is not tied to any particular institution, and as such its students do not
-receive a degree upon completion of the curriculum. Instead, we have a portfolio of completed assignments and
+receive a degree upon completion of the curriculum. Instead, we maintain a portfolio of completed assignments and
 projects. One advantage of this system is that the curators of the curriculum can choose the best available
-online course for each topic without being locked in to using every other course offered by the respective school.
+online course for each topic without being locked in to using other courses offered by the same school.
 
 I am uploading my projects to this repository as I progress through the courses, both as proof of
 completion and as a demonstration of the skills I've learned. Note that because OSSU's curriculum
