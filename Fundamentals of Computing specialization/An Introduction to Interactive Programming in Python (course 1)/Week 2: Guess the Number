@@ -1,13 +1,16 @@
-# "Guess the number" mini-project
-# Simple interactive game; Try to guess a randomly chosen number
-# in a set range with a limited number of guesses, given
-# feedback "higher" or "lower" after each guess.
+"""
+"Guess the Number"
 
-# input comes from buttons and an input field
-# all output for the game will be printed in the console
+Simple interactive game; Try to guess a randomly chosen number
+in a set range with a limited number of guesses, given
+feedback "higher" or "lower" after each guess.
 
-# Runs in CodeSkulptor (Python 2)
-# codeskulptor.org
+Input comes from buttons and an input field;
+all output for the game will be printed in the console
+
+Runs in CodeSkulptor (Python 2)
+codeskulptor.org
+"""
 
 import simplegui
 import math
