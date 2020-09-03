@@ -1,7 +1,9 @@
 """
-Rock-paper-scissors-lizard-Spock mini-project
+Rock-paper-scissors-lizard-Spock
+
 Simple implentation of an expanded version of
-the classic game rock-paper-scissors.
+the classic game rock-paper-scissors. Type
+your choice in the input field.
 
 Student: Jared Cooney
 jaredcooney2@gmail.com
