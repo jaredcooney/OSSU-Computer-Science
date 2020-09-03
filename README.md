@@ -1,7 +1,7 @@
 # OSSU-Computer-Science
 
 I'm currently working through Open Source Society University's computer science curriculum.
-You can view the curriculum at the following link:
+You can view the curriculum here:
 
 https://github.com/ossu/computer-science#curriculum
 
