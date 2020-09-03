@@ -8,6 +8,7 @@
 
 # Runs in CodeSkulptor (Python 2)
 # codeskulptor.org
+
 import simplegui
 import math
 import random
