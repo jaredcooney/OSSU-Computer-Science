@@ -1,0 +1,136 @@
+(require 2htdp/image)
+(require 2htdp/universe)
+
+;; Design Quiz 3: Compound Data
+;; How to Code: Simple Data (University of British Columbia)
+
+;; Student: Jared Cooney
+;; jaredcooney2@gmail.com
+
+;; Runs in DrRacket (Beginning Student Language)
+
+
+;; Running the main function creates a growing an spinning image of a flower
+;; Flower can be reset completely with spacebar, and angle of rotation can be reset to 0 by clicking in frame
+
+;; =================
+;; Constants:
+
+(define WIDTH 800)
+(define HEIGHT WIDTH)
+(define MTS (empty-scene WIDTH HEIGHT))
+
+(define CTR-X (/ WIDTH 2))
+(define CTR-Y (/ HEIGHT 2))
+
+(define GROW-RATE 0.01)
+(define SPIN-RATE 2)
+
+(define FLOWER
+  (overlay (circle 35 "solid" "yellow")
+           (rotate 0 (beside (rotate 0 (ellipse 100 35 "solid" "blue"))
+                             (rotate 0 (ellipse 100 38 "solid" "blue"))))
+           (rotate 45 (beside (rotate 0 (ellipse 100 38 "solid" "purple"))
+                              (rotate 0 (ellipse 100 38 "solid" "purple"))))
+           (rotate 90 (beside (rotate 0 (ellipse 100 38 "solid" "pink"))
+                              (rotate 0 (ellipse 100 38 "solid" "pink"))))
+           (rotate 135 (beside (rotate 0 (ellipse 100 38 "solid" "indigo"))
+                               (rotate 0 (ellipse 100 38 "solid" "indigo"))))))
+
+;; =================
+;; Data definitions:
+
+(define-struct flower (scale angle))
+;; Flower is (make-flower Number Natural[0, 359])
+;; interp. a flower face with size scale factor and rotation angle
+(define P1 (make-flower 1 0))       ; same as source image
+(define P2 (make-flower 1.5 180))   ; larger and upside-down
+
+#;
+(define (fn-for-flower p)
+  (... (flower-scale p)    ;Number
+       (flower-angle p)))  ;Natural[0, 359] 
+
+;; Template rules used:
+;;  - compound: 2 fields
+
+
+
+;; =================
+;; Functions:
+
+;; Flower -> Flower
+;; start the world with (main (make-flower 1 0))
+;; no tests for main function
+(define (main p)
+  (big-bang p                     ; Flower
+    (on-tick   next-flower)      ; Flower -> Flower
+    (to-draw   place-flower)     ; Flower -> Image
+    (on-mouse  reset-angle)       ; Flower Integer Integer MouseEvent -> Flower
+    (on-key    reset-flower)))   ; Flower KeyEvent -> Flower
+
+
+
+
+;; Flower -> Flower
+;; increment the size of flower image by GROW-RATE and increment angle by SPIN-RATE
+(check-expect (next-flower (make-flower 1 0)) (make-flower (+ 1 GROW-RATE) (modulo SPIN-RATE 360)))
+(check-expect (next-flower (make-flower 1.4 359))
+              (make-flower (+ 1.4 GROW-RATE) (modulo (+ 359 SPIN-RATE) 360)))
+
+;(define (next-flower p) (make-flower 1 0))  ; stub
+
+;; <template from Flower>
+
+(define (next-flower p)
+  (make-flower (+ (flower-scale p) GROW-RATE)
+                (modulo (+ (flower-angle p) SPIN-RATE) 360)))
+
+
+
+;; Flower -> Image
+;; place the flower image, appropriately scaled and rotated, in the center of the background scene image
+(check-expect (place-flower (make-flower 1 0)) (place-image FLOWER  CTR-X CTR-Y  MTS))
+(check-expect (place-flower (make-flower 1.4 40)) (place-image (rotate 40 (scale 1.4 FLOWER))
+                                                                 CTR-X CTR-Y  MTS))
+
+;(define (place-flower p) MTS)  ;stub
+
+;; <template from Flower>
+
+(define (place-flower p)
+  (place-image (rotate (flower-angle p)
+                       (scale (flower-scale p)
+                              FLOWER))
+               CTR-X CTR-Y
+               MTS))
+
+
+
+;; Flower KeyEvent -> Flower
+;; reset the flower to scale 1 and angle 0 when space key is pressed
+(check-expect (reset-flower (make-flower 1.3 244) " ") (make-flower 1 0))
+(check-expect (reset-flower (make-flower 1.3 244) "a") (make-flower 1.3 244))
+
+;; <template from KeyEvent>
+
+(define (reset-flower p ke)
+  (cond [(key=? ke " ")
+         (make-flower 1 0)]
+        [else 
+         p]))
+
+
+
+;; Flower Natural Natural MouseEvent -> Flower
+;; resets the flower's rotation angle to 0 when the mouse is clicked
+(check-expect (reset-angle (make-flower 1.2 133) 14 200 "button-down") (make-flower 1.2 0))
+(check-expect (reset-angle (make-flower 1.2 133) 14 200 "button-up")   (make-flower 1.2 133))
+
+;; <template from KeyEvent>
+
+(define (reset-angle p x y me)
+  (cond [(mouse=? me "button-down")
+         (make-flower (flower-scale p) 0)]
+        [else
+         p]))
