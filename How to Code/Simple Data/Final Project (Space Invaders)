@@ -1,7 +1,7 @@
 (require 2htdp/universe)
 (require 2htdp/image)
 
-;; Space Invaders final project
+;; Final Project: Space Invaders
 ;; How to Code: Simple Data (University of British Columbia)
 
 ;; Student: Jared Cooney
