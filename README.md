@@ -5,7 +5,7 @@ You can view the curriculum here:
 
 https://github.com/ossu/computer-science#curriculum
 
-OSSU maintains a curated collection of online courses that is "designed according to the degree requirements
+OSSU maintains a curated series of online courses that is "designed according to the degree requirements
 of undergraduate computer science majors, minus general education (non-CS) requirements, as it is
 assumed most of the people following this curriculum are already educated outside the field of CS."
 
