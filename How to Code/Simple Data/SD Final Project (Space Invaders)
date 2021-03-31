@@ -1,6 +1,3 @@
-(require 2htdp/universe)
-(require 2htdp/image)
-
 ;; Final Project: Space Invaders
 ;; How to Code: Simple Data (University of British Columbia)
 
@@ -10,6 +7,10 @@
 ;; Runs in DrRacket (Beginning Student Language with List Abbreviations)
 
 ;;=============================================================================================================
+(require 2htdp/universe)
+(require 2htdp/image)
+
+;;========================================================
 ;; Constants:
 
 (define WIDTH  300)
@@ -43,7 +44,7 @@
 (define MISSILE (ellipse 5 15 "solid" "red"))
 
 
-;;=============================================================================================================
+;;========================================================
 ;; Data Definitions:
 
 (define-struct game (invaders missiles tank))
@@ -167,8 +168,7 @@
 ;;  - reference: (first lom) is Missile
 
 
-;;=============================================================================================================
-
+;;========================================================
 ;; Functions:
 
 ;; Game -> Game
