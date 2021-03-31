@@ -1,5 +1,3 @@
-(require 2htdp/image)
-
 ;; Design Quiz 4: Naturals and Helpers
 ;; How to Code: Simple Data (University of British Columbia)
 
@@ -9,10 +7,13 @@
 ;; Runs in DrRacket (Beginning Student Language)
 
 ;; ======================================================================
+(require 2htdp/image)
+
+;; ===============================
 ;; Constants
 (define COOKIES (circle 10 "solid" "brown"))
 
-;; ======================================================================
+;; ===============================
 ;; Data Definitions
 
 ;; Natural is one of:
@@ -83,6 +84,7 @@
                  (image-row (sub1 n) i))]))
 
 
+;; ======================================================================
 
 ;; Problem 2:
 ;;
@@ -114,7 +116,6 @@
 
 
 
-
 ;; ListOfBlob is one of:
 ;; - empty
 ;; - (cons Blob ListOfBlob)
@@ -135,7 +136,6 @@
 ;; - compound: 2 fields
 ;; - reference: (first lob) is Blob
 ;; - self-reference: (rest lob) is ListOfBlob
-
 
 
 
@@ -168,7 +168,6 @@
 
 
 
-
 ;; Blob ListOfBlob -> ListOfBlob
 ;; iff Blob b is "solid", flips b with the first item in lob and returns the resulting list
 (check-expect (sink-top "bubble" empty) (cons "bubble" empty))
@@ -189,7 +188,6 @@
          (if (is-solid? b)
              (cons (first lob) (cons b (rest lob)))
              (cons b lob))]))
-
 
 
 
