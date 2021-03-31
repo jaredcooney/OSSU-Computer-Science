@@ -1,6 +1,3 @@
-(require 2htdp/image)
-(require 2htdp/universe)
-
 ;; Design Quiz 3: Compound Data
 ;; How to Code: Simple Data (University of British Columbia)
 
@@ -8,6 +5,10 @@
 ;; jaredcooney2@gmail.com
 
 ;; Runs in DrRacket (Beginning Student Language)
+
+;;===========================================================
+(require 2htdp/image)
+(require 2htdp/universe)
 
 
 ;; Running the main function creates a growing an spinning image of a flower
@@ -55,7 +56,6 @@
 ;;  - compound: 2 fields
 
 
-
 ;; =================
 ;; Functions:
 
@@ -68,7 +68,6 @@
     (to-draw   place-flower)     ; Flower -> Image
     (on-mouse  reset-angle)       ; Flower Integer Integer MouseEvent -> Flower
     (on-key    reset-flower)))   ; Flower KeyEvent -> Flower
-
 
 
 
