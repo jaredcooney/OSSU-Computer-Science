@@ -221,7 +221,7 @@
 (check-expect (schedule-tas CLASS-TAs (list 1 2 3 4 5 6 7 8 9 10 11 12)) false)
 (check-expect (not (false? (schedule-tas CLASS-TAs (list 1 2 3 4 6 7 8 9 10 11 12)))) true) ; no 5
 
-;; template elements: generative recursion of arbitrary-arity tree, mutual recursion
+;; template elements: generative recursion for arbitrary-arity tree, mutual recursion
 ;;                    encapsulated within local, tail-recursive with worklist accumulator
 
 (define (schedule-tas tas slots)
