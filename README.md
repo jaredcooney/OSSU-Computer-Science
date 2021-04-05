@@ -14,12 +14,12 @@ at Urbana-Champaign, OSSU suits my situation perfectly.
 
 OSSU is nontraditional in that it is not tied to any particular institution, and as such its students do not
 receive a degree upon completion of the curriculum. Instead, we maintain a portfolio of completed assignments and
-projects. One advantage of this system is that the curators of the curriculum can choose the best available
+projects. One advantage of this system is that the organization can choose the best available
 online course for each topic without being locked in to using other courses offered by the same school.
 
 I'm uploading my projects to this repository as I progress through the courses, both as proof of
 completion and as a demonstration of the skills I've learned. Note that because OSSU's curriculum
 is periodically updated as technologies change and new courses are offered, some of the courses listed on
-the page linked above will likely differ from the ones that I have taken by the time I finish the program.
+the page linked above will likely differ from the equivalent ones that I have taken.
 
 -Jared Cooney
