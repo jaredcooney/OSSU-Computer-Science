@@ -505,12 +505,12 @@ hier_896_distortions = hierarchical_distortions[2]
 # The hierarchical clustering algorithm has a much slower runtime than the
 #  k-means clustering algorithm, but it tends to produce less distorted
 #  clusters when the data set is small or when many of the most heavily-
-#  weighted data points are relatively close together. This algorithm is also
+#  weighted data points are relatively close together. This algorithm is
 #  therefore also preferable when automation is important, as its output does
 #  not depend on the placement of an initial group of cluster centers,
 #  unlike k-means clustering.
 
-# The k-means clustering algorithm is prefable when the data set is large
+# The k-means clustering algorithm is preferable when the data set is large
 #  and relatively homogenously weighted, or when the situation allows for a
 #  human operator to manually select the locations of the initial
 #  clusters centers. Additionally, a large enough data set will render
