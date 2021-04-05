@@ -22,7 +22,4 @@ completion and as a demonstration of the skills I've learned. Note that because 
 is periodically updated as technologies change and new courses are offered, some of the courses listed on
 the page linked above will likely differ from the ones that I have taken by the time I finish the program.
 
-As a final note, I may also upload some projects from relevant
-courses that I've taken outside of the OSSU curriculum.
-
 -Jared Cooney
