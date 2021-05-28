@@ -102,7 +102,6 @@ fun zip (lst1 : int list, lst2 : int list) =
 (* when one lists runs out, cycle back to the beginning of that list until the other is empty *)
 fun zipRecycle (lst1 : int list, lst2 : int list) =
     case (lst1, lst2) of
-	
 	(_::_, _::_) =>
 	let fun zipRecycle (xs : int list, ys : int list, lst1_empty : bool, lst2_empty : bool) =
 		case (xs, ys, lst1_empty, lst2_empty) of
