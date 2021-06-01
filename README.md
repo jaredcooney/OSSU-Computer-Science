@@ -18,7 +18,8 @@ projects. One advantage of this system is that the organization can choose the b
 online course for each topic without being locked in to using other courses offered by the same school.
 
 I'm uploading my projects to this repository as I progress through the courses, both as proof of
-completion and as a demonstration of the skills I've learned. Note that because OSSU's curriculum
+completion and as a demonstration of the skills I've learned. Most of the top-level folders represent series
+of courses, with subfolders for each of the individual courses in the series. Note that because OSSU's curriculum
 is periodically updated as technologies change and new courses are offered, some of the courses listed on
 the page linked above will likely differ from the equivalent ones that I have taken.
 
