@@ -9,8 +9,8 @@ OSSU maintains a curated series of online courses that is "designed according to
 of undergraduate computer science majors, minus general education (non-CS) requirements, as it is
 assumed most of the people following this curriculum are already educated outside the field of CS."
 
-As I already have a bachelor's degree in liberal arts and sciences from the University of Illinois
-at Urbana-Champaign, OSSU suits my situation perfectly.
+As I already have a bachelor's degree from the University of Illinois
+at Urbana-Champaign, OSSU suits my situation well.
 
 OSSU is nontraditional in that it is not tied to any particular institution, and as such its students do not
 receive a degree upon completion of the curriculum. Instead, we maintain a portfolio of completed assignments and
