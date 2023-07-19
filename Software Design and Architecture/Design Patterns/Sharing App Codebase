@@ -2,6 +2,7 @@ Most of the assignments in this course involved incrementally refactoring the co
 Android application in order to implement several design patterns, remove anti-patterns (code smells), and
 better adhere to the SOLID principles. For simplicity, I've included only my final version of this
 codebase as proof of completion.
+As suggested by the course, I used Android Studio version 2021.11 (Bumblebee) for this project.
 
 The application is called "Sharing App" and is a simple application that allows a lender (the user) to
 keep track of their owned items, which each may or may not be lent out to contacts. Items have names, descriptions,
@@ -16,6 +17,6 @@ Also, some of the variable names in this codebase were decided by the course and
 don't follow standard Java naming conventions. Generally I only made style changes in
 files that I was intended to modify for the assignment.
 
-You can find a zip file of my submission at the following link:
+You can find a zip file of the code at the following link:
 
-https://drive.google.com/file/d/1ugvMZlCPzpyH7WYIlvDczefta5PFdlIP/view?usp=drive_link
+https://drive.google.com/file/d/1IkcGUu9oAY54F1-v2olxr6QMSS1ZRXpv/view?usp=drive_link
