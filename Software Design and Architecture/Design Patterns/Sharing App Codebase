@@ -1,0 +1,21 @@
+Most of the assignments in this course involved incrementally refactoring the codebase of a working
+Android application in order to implement several design patterns, remove anti-patterns (code smells), and
+better adhere to the SOLID principles. For simplicity, I've included only my final version of this
+codebase as proof of completion.
+
+The application is called "Sharing App" and is a simple application that allows a lender (the user) to
+keep track of their owned items, which each may or may not be lent out to contacts. Items have names, descriptions,
+dimensions, an image, and a status (either "available", or "borrowed" by a particular contact), all of which
+can be viewed. The user also has a list of contacts, and contacts can be added or deleted. When the user changes
+an item's status to "borrowed", they must indicate which of their contacts is borrowing the item.
+
+Note that, due to the nature of the assignment, much of this code was not written by me.
+However, the assignment did require developing an understanding of almost all of the provided code.
+
+Also, some of the variable names in this codebase were decided by the course and
+don't follow standard Java naming conventions. Generally I only made style changes in
+files that I was intended to modify for the assignment.
+
+You can find a zip file of my submission at the following link:
+
+https://drive.google.com/file/d/1ugvMZlCPzpyH7WYIlvDczefta5PFdlIP/view?usp=drive_link
