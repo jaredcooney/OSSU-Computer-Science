@@ -1,0 +1,41 @@
+Course: Design Patterns (University of Alberta)
+Student: Jared Cooney (jaredcooney2@gmail.com)
+
+Assignment: Identify and explain two anti-patterns in a given codebase. Discuss potential solutions.
+
+====================================================================
+
+1. Duplicated Code
+
+The classes AddItemActivity and EditItemActivity contain duplicated input-checking code in their respective
+saveItem methods. The duplicated code uses six consecutive if statements to check whether the user has
+entered data in all required fields before saving the relevant item object to the item list, and if not,
+it sets an error (with the text “Empty field!”) on the appropriate EditText object instance variable.
+
+(This series of checks also contributes to the Long Method anti-pattern.)
+
+The classes AddContactActivity and EditContactActivity have
+a similar issue, though with fewer duplicated if blocks.
+
+To resolve this, the input-checking code could be factored out into a separate class, or potentially
+into a method in a shared superclass. Creating a shared superclass solely for this purpose would
+likely not be worthwhile, but there are other similarities between both aforementioned pairs of 
+classes that could potentially make this option more compelling.
+
+Both cases also closely resemble the Switch Statement anti-pattern, and
+they could be made somewhat more concise using polymorphism.
+
+=================================
+
+2. Data Class
+
+The Dimensions class is a data class, as it only contains attributes for length, width, and height, plus
+getters and setters for those attributes. This class does make sense in the context of this simple
+application because several other classes use Dimensions objects. Redesigning those classes to work
+directly with the length, width, and height values would introduce two other
+anti-patterns: Data Clumps and Primitive Obsession.
+
+In a more robust application, a similar Dimensions class would ideally contain additional
+functionality, e.g. a getVolume() method. However, implementing such functionality before
+it is needed would resemble the Speculative Generality anti-pattern.
+ 
