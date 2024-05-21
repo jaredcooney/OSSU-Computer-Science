@@ -25,7 +25,8 @@ is periodically updated as technologies change and new courses are offered, some
 the page linked above will likely differ from the equivalent ones that I have taken.
 
 I've also spent some time studying material outside of the OSSU curriculum, which I haven't included here.
-Most notably, I got my CompTIA A+ certification.
+Most notably, I got my CompTIA A+ certification, and I am currently working on Google's cybersecurity
+course series in preparation for the Security+ certification exam.
 
 Thanks for taking the time to check this out!
 
